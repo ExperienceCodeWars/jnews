@@ -18,7 +18,7 @@ public class ParserTask {
 
     private final NewsService newsService;
 
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 30000)
     public void parseNewNews() {
         log.info(">>> parseNewNews");
         var url = "https://news.ycombinator.com/";
